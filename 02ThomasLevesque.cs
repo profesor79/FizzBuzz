@@ -14,12 +14,12 @@ namespace FizzBuzz
             bool buzz = i % 5 == 0;
             if (fizz && buzz)
                 return "FizzBuzz";
-            else if (fizz)
+            if (fizz)
                 return "Fizz";
-            else if (buzz)
+            if (buzz)
                 return "Buzz";
-            else
-                return i.ToString();
+
+            return i.ToString();
         }
     }
 }
