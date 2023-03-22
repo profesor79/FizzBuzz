@@ -5,7 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FizzBuzz
-{
+{/// <summary>
+/// original source   https://stackoverflow.com/a/11764613/5919473
+/// </summary>
     public class _02ThomasLevesque
     {
         public string DoFizzBuzz(int i)
