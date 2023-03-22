@@ -8,6 +8,11 @@ namespace FizzBuzz;
 
 public class Xela
 {
+    /// <summary>
+    /// source https://stackoverflow.com/a/29586018/5919473
+    /// </summary>
+    /// <param name="i"></param>
+    /// <returns></returns>
     public string FMB(int i)
     {
         var sb = new StringBuilder();
