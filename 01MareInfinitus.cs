@@ -3,7 +3,7 @@
 /// <summary>
 /// source before refactoring https://stackoverflow.com/q/11764539/5919473
 /// </summary>
-internal class _01MareInfinitus
+public class _01MareInfinitus
 {
     private static Tuple<int, string>[] _combinations = new Tuple<int, string>[]
         {
