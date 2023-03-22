@@ -15,8 +15,7 @@ namespace FizzBuzz
         public string FizzBuzz(int i)
         {
             _results[0] = i.ToString();
-            var s = _dividers3[i % 3] + _dividers5[i % 5];
-            return _results[s.Length];
+            return _results[(_dividers3[i % 3] + _dividers5[i % 5]).Length];
         }
     }
 }
