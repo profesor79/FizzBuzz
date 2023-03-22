@@ -8,7 +8,7 @@ namespace FizzBuzz
 {
     public class _06DaemonFire
     {
-        public ABC()
+        public void ABC()
         {
             foreach (var item in Enumerable.Range(1, 100).Select(FizzBuzz))
             {
