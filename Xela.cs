@@ -4,11 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FizzBuzz
+namespace FizzBuzz;
+
+public class Xela
 {
-    internal class Xela
+    public string FMB(int i)
     {
-        public string FMB()
-        {
-        }
+        var sb = new StringBuilder();
+        Enumerable.Range(i, i)
+            .ToList()
+            .ForEach(i => sb.AppendLine(i % 3 * i % 5 == 0 ? (i % 3 == 0 ? "Fizz" : "") + (i % 5 == 0 ? "Buzz" : "") : i.ToString()));
+        return sb.ToString();
     }
+}
