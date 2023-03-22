@@ -2,6 +2,9 @@
 
 public class Wug
 {
+    /// <summary>
+    /// can't do anything as this always runs in batches of 15...
+    /// </summary>
     public void FizzBuzz()
     {
         const string FIZZ = "Fizz";
