@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace FizzBuzz
 {
-    internal class _06DaemonFire
+    public class _06DaemonFire
     {
+        public ABC()
+        {
+            foreach (var item in Enumerable.Range(1, 100).Select(FizzBuzz))
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        public string FizzBuzz(int number)
+        {
+            return (number % 3, number % 5) switch
+            {
+                (0, 0) => "FizzBuzz",
+                (0, _) => "Fizz",
+                (_, 0) => "Buzz",
+                _ => number.ToString(),
+            };
+        }
     }
 }
